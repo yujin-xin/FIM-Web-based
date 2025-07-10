@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Integrity Monitor</title>
+    
+
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>File Integrity Monitor (Web)</h1>
+        </div>
+
+        <div class="main-content">
+            <div class="mode-selector">
+                <button class="mode-btn active" onclick="switchMode('create')">Create Hash</button>
+                <button class="mode-btn" onclick="switchMode('compare')">Compare Hash</button>
+            </div>
+
+            <!-- Create Hash Mode -->
+            <div class="mode-panel active" id="create-mode">
+                <div class="panel-content">
+                    <div class="hash-selector">
+                        <h3>Hash Algorithm</h3>
+                        <div class="hash-options">
+                            <div class="hash-option">
+                                <input type="radio" name="hash-create" id="sha1-create" value="sha1" checked>
+                                <label for="sha1-create">SHA1</label>
+                            </div>
+                            <div class="hash-option">
+                                <input type="radio" name="hash-create" id="sha256-create" value="sha256">
+                                <label for="sha256-create">SHA256</label>
+                            </div>
+                            <div class="hash-option">
+                                <input type="radio" name="hash-create" id="sha512-create" value="sha512">
+                                <label for="sha512-create">SHA512</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="drop-zone" onclick="document.getElementById('folder-input').click()">
+                        <h3>Drag & Drop Folder</h3>
+                        <p>Drop your folder here or click to select</p>
+                        <input type="file" id="folder-input" class="file-input" webkitdirectory directory multiple>
+                    </div>
+
+                    <div class="output-section">
+                        <div class="output-header">Output Information</div>
+                        <div id="create-output">
+                            <div class="result-item info">Ready to create baseline. Select a folder to start hashing.</div>
+                        </div>
+                    </div>
+
+                    <button class="download-btn" id="download-baseline">Download baseline.json</button>
+                </div>
+            </div>
+
+            <!-- Compare Hash Mode -->
+            <div class="mode-panel" id="compare-mode">
+                <div class="panel-content">
+                    <div class="hash-selector">
+                        <h3>Hash Algorithm</h3>
+                        <div class="hash-options">
+                            <div class="hash-option">
+                                <input type="radio" name="hash-compare" id="sha1-compare" value="sha1" checked>
+                                <label for="sha1-compare">SHA1</label>
+                            </div>
+                            <div class="hash-option">
+                                <input type="radio" name="hash-compare" id="sha256-compare" value="sha256">
+                                <label for="sha256-compare">SHA256</label>
+                            </div>
+                            <div class="hash-option">
+                                <input type="radio" name="hash-compare" id="sha512-compare" value="sha512">
+                                <label for="sha512-compare">SHA512</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="drop-zone" onclick="document.getElementById('folder-compare-input').click()">
+                        <h3>Drag & Drop Folder</h3>
+                        <p>Current folder to check</p>
+                        <input type="file" id="folder-compare-input" class="file-input" webkitdirectory directory multiple>
+                    </div>
+
+                    <div class="drop-zone" onclick="document.getElementById('baseline-input').click()">
+                        <h3>Drag baseline.json</h3>
+                        <p>Reference baseline file</p>
+                        <input type="file" id="baseline-input" class="file-input" accept=".json">
+                    </div>
+
+                    <div class="output-section">
+                        <div class="output-header">Comparison Results</div>
+                        <div id="compare-output">
+                            <div class="result-item info">Ready to compare. Please select both a folder and baseline.json file.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p>
+            <p class="reference-text-color">Mart Eugen Gevero</p>
+            <p ><a href="https://github.com/yujin-xin" class="reference-text-color">GitHub</a></p>
+        </p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
