@@ -1,19 +1,8 @@
 {
     "build": {
-      "builder": "NIXPACKS",
-      "nixpacksPlan": {
-        "phases": {
-          "install": {
-            "cmds": ["npm install"]
-          },
-          "build": {
-            "cmds": ["echo 'no build step needed'"]
-          },
-          "start": {
-            "cmds": ["node app.js"]
-          }
-        }
-      }
+      "builder": "NIXPACKS"
+    },
+    "deploy": {
+      "startCommand": "node app.js"
     }
   }
-  
