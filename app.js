@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0' ,() => {
     console.log(`🔐 File Integrity Monitor running at http://localhost:${port}`);
     console.log('Press Ctrl+C to stop the server');
 });
