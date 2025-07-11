@@ -20,7 +20,7 @@ This is the **web-based version** of the original [CLI-based FIM tool](https://g
 * Frontend: Minimal web interface (HTML/CSS/JS)
 * latform: Cross-platform (Linux, Windows, macOS)
 
-# Installation
+# How to install on my local machine
 ```bash
 git clone https://github.com/yujin-xin/FIM-Web-based
 cd FIM-Web-based
