@@ -230,8 +230,27 @@ body {
 }
 
 .reference-text-color {
-    color: whitesmoke;
+    text-align: center;
+    color: purple;
+    text-decoration: none;
 }
+
+.reference-style {
+    padding: 10px;
+}
+
+.git-hub-style {
+    background-color: orange;
+    padding: 1px;
+    text-decoration: none;
+}
+
+.git-hub-style:hover {
+    color: green;
+    background-color: black;
+}
+
+
 
 @media (max-width: 600px) {
     .hash-options {
