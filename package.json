@@ -15,8 +15,8 @@
   "type": "commonjs",
   "main": "app.js",
   "scripts": {
-    "build": "echo 'no build step'",
-    "start": "node app.js"
+  "build": "echo 'no build'",
+  "start": "node app.js"
   },
   "engines": {
     "node": ">=18"
