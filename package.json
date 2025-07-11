@@ -15,6 +15,7 @@
   "type": "commonjs",
   "main": "app.js",
   "scripts": {
+    "build": "echo 'no build step'",
     "start": "node app.js"
   },
   "dependencies": {
