@@ -14,4 +14,4 @@ app.get('/', (req, res) => {
 app.listen(port, '0.0.0.0' ,() => {
     console.log(`🔐 File Integrity Monitor running at http://localhost:${port}`);
     console.log('Press Ctrl+C to stop the server');
-});
+}); 
