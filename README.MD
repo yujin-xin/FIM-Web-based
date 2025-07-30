@@ -15,6 +15,9 @@ Link: https://fim-web-based-production.up.railway.app/
 * Web-accessible tool for small teams needing lightweight compliance or tamper detection
 * Educational and internal tools demonstrating real-world FIM concepts in a browser
 
+## How to use
+Please refer to this documentation [CLI-based FIM tool](https://github.com/yujin-xin/File-integrity-monitoring/tree/main)
+
 # How to install on my local machine
 Make sure you have nodeJs and npm installed in your operating system
 ```bash
