@@ -28,8 +28,8 @@ This will be use to verify the integrity of the files inside the folder or the b
 2. Select or drag the folder you want to verify (baseline),
 3. Select or drag the baseline.json.
 
-### If the file/s has been modified after comparing
-It will show you what are the files that has been deleted, modified, or added.
+### If Comparing shows Error
+It will show you which files have been deleted, modified, or added. Otherwise, nothing has been modified since the last snapshot.
 
 
 # How to install on my local machine
