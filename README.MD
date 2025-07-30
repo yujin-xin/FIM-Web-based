@@ -17,7 +17,7 @@ Link: https://fim-web-based-production.up.railway.app/
 
 ## How to use
 ### Creating new baseline
-This creates a snapshot of the current file.
+This creates a snapshot of the current base-folder.
 1. Click **Create Hash**,
 2. choose hash type (SHA1, SHA254, SHA512), and drag or select the folder you want to create a baseline,
 3. Download the baseline (baseline.json). This will now be the snapshot of your current original file.
