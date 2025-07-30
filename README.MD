@@ -17,9 +17,19 @@ Link: https://fim-web-based-production.up.railway.app/
 
 ## How to use
 ### Creating new baseline
-1. Click **Create Hash**
-2. choose hash type (SHA1, SHA254, SHA512), and drag or select the folder you want to create a baseline.
+This creates a snapshot of the current file.
+1. Click **Create Hash**,
+2. choose hash type (SHA1, SHA254, SHA512), and drag or select the folder you want to create a baseline,
 3. Download the baseline (baseline.json). This will now be the snapshot of your current original file.
+
+### Comparing Hash
+This will be use to verify the integrity of the files inside the folder or the baseline.
+1. Click **Compare Hash**,
+2. Select or drag the folder you want to verify (baseline),
+3. Select or drag the baseline.json.
+
+### If the file/s has been modified after comparing
+It will show you what are the files that has been deleted, modified, or added.
 
 
 # How to install on my local machine
