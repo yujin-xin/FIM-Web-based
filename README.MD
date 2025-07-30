@@ -16,7 +16,8 @@ Link: https://fim-web-based-production.up.railway.app/
 * Educational and internal tools demonstrating real-world FIM concepts in a browser
 
 ## How to use
-Please refer to this documentation [CLI-based FIM tool](https://github.com/yujin-xin/File-integrity-monitoring/tree/main)
+Go to the website.
+If you want to create a new hash, click **Create Hash** then drag or select the folder you want to create a baseline
 
 # How to install on my local machine
 Make sure you have nodeJs and npm installed in your operating system
